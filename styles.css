@@ -459,6 +459,7 @@ p {
                       url(images/images/bg\ set\ up.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -479,6 +480,7 @@ p {
 .products-hero p {
     font-size: 1.4rem;
     opacity: 0.9;
+    color: #f0f0f0;
 }
 
 /* Products Grid */
