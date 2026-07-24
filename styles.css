@@ -20,17 +20,15 @@ body {
 }
 
 .header {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url(images/images/bg\ set\ up.jpg);
-    background-position: center bottom;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                      url(images/images/bg\ set\ up.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    
+    position: relative;
 }
 
 .menu {
@@ -38,87 +36,82 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    padding: 20px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
-
+    z-index: 100;
 }
-
 
 .logo {
-    color: #FFFDFC;
-    font-size: 25px;
+    color: #fff;
+    font-size: 28px;
     font-weight: 800;
-
-
+    letter-spacing: 1px;
 }
 
-.menu .navbar ul li {
-    position: relative;
-    float: left;
-}
-
-.menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: #FFFDFC;
-    display: block;
-    font-weight: 600;
-}
-
-.menu .navbar ul li a:hover{
-    color: #CE9678;
-
-}
-
-#menu {
-    display: none;
-
-}
-
-.menu-icono {
-    width: 25px;
-}
-
-.menu label {
+.menu-label {
     cursor: pointer;
     display: none;
 }
 
-.header-content {
-    text-align: center;
-
+.menu-icono {
+    width: 30px;
+    filter: brightness(0) invert(1);
 }
 
-.header content h1 {
-    font-size: 75px;
-    line-height: 80px;
-    color: #F9FAFC;
-    text-transform: uppercase;
-    margin-bottom: 35px;
+.navbar ul {
+    display: flex;
+    gap: 10px;
+}
 
+.navbar ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #CE9678;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+/* Hero Text */
+.header-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
 .header-content p {
-    font-size: 16px;
-    color: #c5c5c5;
-    padding: 0 250px;
-    margin-bottom: 25px;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
 }
 
 .btn-1 {
     display: inline-block;
-    padding: 11px 35px;
-    background-color: #CE967B;
-    color: #F9FAFC;
-    text-transform: uppercase;
-
+    padding: 14px 40px;
+    background-color: #CE9678;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s;
 }
 
 .btn-1:hover {
     background-color: #ebad8b;
+    transform: translateY(-3px);
 }
 
 .coffee {
